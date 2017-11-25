@@ -34,4 +34,4 @@ def remove_strawberry(contacts)
   end
 end
 
-binding.pry
+remove_strawberry(contacts)
