@@ -5,7 +5,7 @@ require 'pry'
     "Jon Snow" => {
       name: "Jon",
       email: "jon_snow@thewall.we",
-      favorite_ice_cream_flavors: ["chocolate", "vanilla"]
+      favorite_ice_cream_flavors: ["chocolate", "vanilla", "strawberry"]
     },
     "Freddy Mercury" => {
       name: "Freddy",
