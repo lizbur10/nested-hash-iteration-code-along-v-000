@@ -36,7 +36,7 @@ def remove_strawberry(contacts)
       end
     end
   end
-  contacts
+  puts "#{contacts}"
 end
 
 remove_strawberry(contacts)
