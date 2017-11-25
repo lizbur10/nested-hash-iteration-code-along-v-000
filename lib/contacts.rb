@@ -29,7 +29,7 @@ require 'pry'
 # end
 
 def remove_strawberry(contacts)
-  contacts["Freddy Mercury"][:favorite_ice_cream_flavors].each | flavor |
-    value.delete("strawberry")
+  contacts.each do | person, contact_details_hash |
+    binding.pry
   end
 end
