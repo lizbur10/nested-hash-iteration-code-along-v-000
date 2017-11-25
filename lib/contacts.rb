@@ -15,7 +15,7 @@ require 'pry'
   # }
 
 
-## Iteration solution
+## Iteration solution -- passes spec
 # def remove_strawberry(contacts)
 #   contacts.each do | person, data |
 #     if person == "Freddy Mercury"
@@ -28,13 +28,14 @@ require 'pry'
 #   end
 # end
 
-##Direct access solution
+##Direct access solution -- passes spec
 def remove_strawberry(contacts)
   contacts["Freddy Mercury"][:favorite_ice_cream_flavors].delete_if { | flavor | flavor == "strawberry" }
   contacts
 end
 
-## Solution from codealong-- incorrect
+## Solution from codealong-- passes spec but nonetheless incorrect (removes any instance of strawberry, not just for Freddy Mercury ##
+##
 # def remove_strawberry(contacts)
 #   contacts.each do | person, contact_details_hash |
 #     contact_details_hash.each do | attribute, data |
