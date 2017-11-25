@@ -27,9 +27,7 @@ require 'pry'
 # end
 
 def remove_strawberry(contacts)
-  contacts["Freddy Mercury"][:favorite_ice_cream_flavors].each do | favorite |
-    favorite.delete_if { | flavor | flavor == "strawberry" }
-  end
+  contacts["Freddy Mercury"][:favorite_ice_cream_flavors].delete_if { | flavor | flavor == "strawberry" }
 end
 
 # def remove_strawberry(contacts)
