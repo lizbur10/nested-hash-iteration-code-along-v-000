@@ -16,23 +16,23 @@ require 'pry'
 
 
 ## Iteration solution -- passes spec
-# def remove_strawberry(contacts)
-#   contacts.each do | person, data |
-#     if person == "Freddy Mercury"
-#       data.each do | attribute, value |
-#         if attribute == :favorite_ice_cream_flavors
-#           value.delete_if { | flavor | flavor == "strawberry" }
-#         end
-#       end
-#     end
-#   end
-# end
+def remove_strawberry(contacts)
+  contacts.each do | person, data |
+    if person == "Freddy Mercury"
+      data.each do | attribute, value |
+        if attribute == :favorite_ice_cream_flavors
+          value.delete_if { | flavor | flavor == "strawberry" }
+        end
+      end
+    end
+  end
+end
 
 ##Direct access solution -- passes spec
-def remove_strawberry(contacts)
-  contacts["Freddy Mercury"][:favorite_ice_cream_flavors].delete_if { | flavor | flavor == "strawberry" }
-  contacts
-end
+# def remove_strawberry(contacts)
+#   contacts["Freddy Mercury"][:favorite_ice_cream_flavors].delete_if { | flavor | flavor == "strawberry" }
+#   contacts
+# end
 
 ## Solution from codealong-- passes spec but nonetheless incorrect (removes any instance of strawberry, not just for Freddy Mercury ##
 ##
