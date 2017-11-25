@@ -14,17 +14,24 @@ require 'pry'
   #   }
   # }
 
+# def remove_strawberry(contacts)
+#   contacts.each do | person, data |
+#     if person == "Freddy Mercury"
+#       data.each do | attribute, value |
+#         if attribute == :favorite_ice_cream_flavors
+#           if value.include?("strawberry")
+#             value.delete( "strawberry" )
+#           end
+#         end
+#       end
+#     end
+#   end
+# end
+
 def remove_strawberry(contacts)
-  contacts.each do | person, data |
-    if person == "Freddy Mercury"
-      data.each do | attribute, value |
-        if attribute == :favorite_ice_cream_flavors
-          if value.include?("strawberry")
-            value.delete( "strawberry" )
-          end
-        end
-      end
+  contacts["Freddy Mercury"][:favorite_ice_cream_flavors].each | flavor |
+    if flavor.include?("strawberry")
+      value.delete("strawberry")
     end
   end
-
 end
