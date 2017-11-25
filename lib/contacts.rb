@@ -30,7 +30,7 @@ require 'pry'
 
 def remove_strawberry(contacts)
   contacts["Freddy Mercury"][:favorite_ice_cream_flavors].each | flavor |
-    if flavor == "strawberry")
+    if flavor == "strawberry"
       value.delete("strawberry")
     end
   end
